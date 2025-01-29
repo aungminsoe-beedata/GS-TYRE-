@@ -1,0 +1,38 @@
+.display_qty {
+     background: #714B67;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100px;
+     height: 20px;
+     border-radius: 3px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 10px;
+     color: white;
+     padding: 5px;
+     overflow: hidden;
+ }
+ .display_qty.not-available {
+     background: #808080;
+ }
+ .display_qty.low_stock {
+     background: #e50000;
+ }
+ .display_qty.medium_stock {
+     background: #999900;
+ }
+ .marquee-text {
+     display: inline-block;
+     white-space: nowrap;
+     animation: scroll 5s linear infinite;
+ }
+ @keyframes scroll {
+     from {
+         transform: translateX(100%);
+     }
+     to {
+         transform: translateX(-100%);
+     }
+ }
+ 
